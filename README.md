@@ -6,10 +6,10 @@
     Rename it to "steam_api_org.dll". Seems to be case sensitive, so double check. Then copy one of the included "steam_api.dll"'s into that folder, depending on what features you want.
 
 Different features in different versions:
-"AutoexecAndGravityMode"    : Has both Autoexec and the Random Gravity-Mode
-"NoAutoexecNoGravityMode"   : Neither Autoexec, nor Random Gravity
-"NoAutoexecWithGravityMode" : No Autoexec but Random Gravity
-"AutoexecNoGravityMode"     : Autoexec but no Random Gravity
+- "AutoexecAndGravityMode"    : Has both Autoexec and the Random Gravity-Mode
+- "NoAutoexecNoGravityMode"   : Neither Autoexec, nor Random Gravity
+- "NoAutoexecWithGravityMode" : No Autoexec but Random Gravity
+- "AutoexecNoGravityMode"     : Autoexec but no Random Gravity
 
 !!! All versions have the F8-Hotkey to "exec Patch.txt" !!!
 
