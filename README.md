@@ -46,7 +46,7 @@ To disable this mode again, press CTRL+F10. Sometimes you need to hold this comb
 ## Expect:
 - Autoexec or (bypassing autoexec)
 - Random Gravity (if you select a version that contains this feature)
-- Probably a crash at some point ¯\\_(ツ)_/¯
+- Probably a crash at some point ¯\\\_(ツ)_/¯
 
 # Credits:
 - c0dycode
