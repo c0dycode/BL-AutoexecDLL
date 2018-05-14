@@ -16,6 +16,7 @@ Different features in different versions:
 # Current Features:
 - Autoexec (with skipping Autoexec via. CTRL)
 - Random Gravity-Mode
+- Notification whether the SparkService is initialized or not (Online hotfixes if yes and vice versa), if autoexec is skipped.
 
 ## Autoexec:
 This is finally some kind of "real" autoexec. No longer simulated simulated keyboard inputs. Rather the games own function is being called with proper parameters.
@@ -34,11 +35,11 @@ This will randomize the gravity in random intervals (2-10 seconds).
 Tweaking the range of the random gravity is most likely still needed.
 
 To start this mode, Press CTRL+F9. You should now see a message in the In-Game-Chat.
-To disable this mode again, press CTRL+F10. Sometimes you need to hold this combo for like a second. You'll see a message that the mode will be disabled and shortly after you should see a message that the mode has been disabled.
+To disable this mode again, press CTRL+F10. You'll see a message that the mode has been disabled.
 
 
 # Known Issues:
-- When skipping/applying the autoexec or enabling the Random Gravity-Mode, the game might crash. Not too sure why yet. Simply restart the game and try again.
+- Previous random crashes have been reduced by A LOT!
 
 ## Not tested:
 - How and if it works in multiplayer (Random Gravity)
@@ -46,7 +47,7 @@ To disable this mode again, press CTRL+F10. Sometimes you need to hold this comb
 ## Expect:
 - Autoexec or (bypassing autoexec)
 - Random Gravity (if you select a version that contains this feature)
-- Probably a crash at some point ¯\\_(ツ)_/¯
+- MAYBE a crash at some point
 
 # Credits:
 - c0dycode
