@@ -6,10 +6,12 @@
 - create "autoexec.txt" in the Binaries-folder where your patch-file is in and put "exec YOURPATCHFILENAME.txt" inside.
 
 Different features in different versions:
-"AutoexecAndGravityMode"    : Has both Autoexec and the Random Gravity-Mode
-"NoAutoexecNoGravityMode"   : Neither Autoexec, nor Random Gravity
-"NoAutoexecWithGravityMode" : No Autoexec but Random Gravity
-"AutoexecNoGravityMode"     : Autoexec but no Random Gravity
+
+- "AutoexecAndGravityMode"    : Has both Autoexec and the Random Gravity-Mode
+- "NoAutoexecNoGravityMode"   : Neither Autoexec, nor Random Gravity
+- "NoAutoexecWithGravityMode" : No Autoexec but Random Gravity
+- "AutoexecNoGravityMode"     : Autoexec but no Random Gravity
+
 
 !!! All versions have the F8-Hotkey to "exec autoexec.txt" !!!
 
