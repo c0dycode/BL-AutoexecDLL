@@ -47,7 +47,11 @@ To disable this mode again, press CTRL+F10. You'll see a message that the mode h
 ## Expect:
 - Autoexec or (bypassing autoexec)
 - Random Gravity (if you select a version that contains this feature)
+<<<<<<< HEAD
 - MAYBE a crash at some point
+=======
+- Probably a crash at some point ¯\\\_(ツ)_/¯
+>>>>>>> 93c61aba917e5d0dea3c0f8b79944f9baf89b0c1
 
 # Credits:
 - c0dycode
