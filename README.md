@@ -39,9 +39,11 @@ Tweaking the range of the random gravity is most likely still needed.
 To start this mode, Press CTRL+F9. You should now see a message in the In-Game-Chat.
 To disable this mode again, press CTRL+F10. You'll see a message that the mode has been disabled.
 
-
+# Changes
+Previous random crashes have been reduced by A LOT!
+ 
 # Known Issues:
-- Previous random crashes have been reduced by A LOT!
+- You tell me :P
 
 ## Not tested:
 - How and if it works in multiplayer (Random Gravity)
