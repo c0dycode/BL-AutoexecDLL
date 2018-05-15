@@ -51,7 +51,12 @@ To disable this mode again, press CTRL+F10. You'll see a message that the mode h
 - Random Gravity (if you select a version that contains this feature)
 - MAYBE a crash at some point
 
-# Credits:
+# Disclaimer
+Obviously use at your own risk. It may cause a random gamecrash or similiar.
+
+# Credits
 - c0dycode
-- TheFeckless: For his awesome SDK-Generator and tutorial
-- Warranty Voider: For his "Proxy DLL Maker"
+
+# Thanks
+- TheFeckless
+- Warranty Voider
