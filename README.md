@@ -1,24 +1,36 @@
 # Installation:
 - Manually renaming :
     In your "Borderlands 2\Binaries\Win32"-folder find your current "steam_api.dll".
-    Rename it to "steam_api_org.dll". Seems to be case sensitive, so double check. Then copy one of the included "steam_api.dll"'s into that folder, depending on what features you want.
+    Rename it to "steam_api_org.dll" (exactly like that, because we're going to forward calls meant for that dll to it. It's also case sensitive, so double check.) 
+    
+    Then copy one of the included "steam_api.dll"'s into that folder, depending on what features you want.
 
 - create "autoexec.txt" in the Binaries-folder where your patch-file is in and put "exec YOURPATCHFILENAME.txt" inside.
 
+OPTIONAL:
+Make the "autoexec.txt" look like this:
+```
+Online=exec YourOnlineHotfixPatch.txt
+Offline=exec YourOfflineHotfixPatch.txt
+Fastmode=true
+```
+
+
 Different features in different versions:
 
-- "AutoexecAndGravityMode"    : Has both Autoexec and the Random Gravity-Mode
-- "NoAutoexecNoGravityMode"   : Neither Autoexec, nor Random Gravity
-- "NoAutoexecWithGravityMode" : No Autoexec but Random Gravity
-- "AutoexecNoGravityMode"     : Autoexec but no Random Gravity
-
+- "AutoexecAndGravityMode"       : Has both Autoexec and the Random Gravity-Mode
+- "NoAutoexecNoGravityMode"      : Neither Autoexec, nor Random Gravity
+- "NoAutoexecWithGravityMode"    : No Autoexec but Random Gravity
+- "AutoexecNoGravityMode"        : Autoexec but no Random Gravity
+- "AutoexecNoGravityModeOffline" : Auoexec, no gravity and forced Offline-Hotfixes
 
 !!! All versions have the F8-Hotkey to "exec autoexec.txt" !!!
 
 # Current Features:
 - Autoexec (with skipping Autoexec via. CTRL)
-- Random Gravity-Mode
+- Random Gravity-Mode (only BL2)
 - Notification whether the SparkService is initialized or not (Online hotfixes if yes and vice versa), if autoexec is skipped.
+- Fastmode
 
 ## Autoexec:
 This is finally some kind of "real" autoexec. No longer simulated simulated keyboard inputs. Rather the games own function is being called with proper parameters.
@@ -32,15 +44,46 @@ Currently a hardcoded hotkey is also implemented to execute "autoexec.txt". Simp
 - Unlike executing the patch manually, you'll not see any kind of response if you open the console after executing the patch. (Yet?)
 - However, should there be an issue, like File wasn't found, it'll still tell you in the Console.
 
-## Random Gravity-Mode:
+## Random Gravity-Mode (BL2 only):
 This will randomize the gravity in random intervals (2-10 seconds).
 Tweaking the range of the random gravity is most likely still needed.
 
 To start this mode, Press CTRL+F9. You should now see a message in the In-Game-Chat.
 To disable this mode again, press CTRL+F10. You'll see a message that the mode has been disabled.
 
-# Changes
-Previous random crashes have been reduced by A LOT!
+## Fastmode: Skips the Loading screen before the "Press any key"-Menu and the "Press any key"-Menu itself.
+For optimal results, skip the "2K", "Gearbox" and "NVidia"-logos manually as fast as you can, or disable them in "WillowEngine.ini".
+You can find it here:
+```
+Documents\My Games\Borderlands 2\WillowGame\Config
+```
+
+Then look for
+```
+[FullScreenMovie]
+bForceNoMovies=FALSE
+StartupMovies=2K_logo
+StartupMovies=Gearbox_logo
+StartupMovies=NVidia
+StartupMovies=Loading
+```
+
+and change it to
+
+```
+[FullScreenMovie]
+bForceNoMovies=FALSE
+StartupMovies=;2K_logo
+StartupMovies=;Gearbox_logo
+StartupMovies=;NVidia
+StartupMovies=;Loading
+```
+
+# Changes (Most Recent at the Top)
+- Added Fastmode
+- Added a version for forced offline Hotfixes
+- Added configuration to allow execution of different files, depending on whether you can use online hotfixes or not
+- Previous random crashes have been reduced by A LOT!
  
 # Known Issues:
 - You tell me :P
@@ -50,7 +93,7 @@ Previous random crashes have been reduced by A LOT!
 
 ## Expect:
 - Autoexec or (bypassing autoexec)
-- Random Gravity (if you select a version that contains this feature)
+- Random Gravity (if you select a BL2 version that contains this feature)
 - MAYBE a crash at some point
 
 # Disclaimer
