@@ -80,6 +80,11 @@ StartupMovies=;Loading
 ```
 
 # Changes (Most Recent at the Top)
+- Should have fixed Status of the SparkService when skipping autoexec
+- Hotkey-Exec now checks whether to exec the Offline or Online-Hotfix patch (setup autoexec.txt accordingly and make sure to convert Patchfiles to online/offline via FilterTool/BLCMM)
+- Removed checking for Window-Titles, using the "HWND" stored by the game itself instead (should fix usage of multiple game instances)
+- Added MessageBox in case the original steam_api.dll hasn't been renamed properly
+- Added NoAutoexecNoGravityModeOffline
 - Added Fastmode
 - Added a version for forced offline Hotfixes
 - Added configuration to allow execution of different files, depending on whether you can use online hotfixes or not
