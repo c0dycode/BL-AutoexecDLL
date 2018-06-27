@@ -1,9 +1,9 @@
 # Installation:
 - Manually renaming :
-    In your "Borderlands 2\Binaries\Win32"-folder find your current "steam_api.dll".
-    Rename it to "steam_api_org.dll" (exactly like that, because we're going to forward calls meant for that dll to it. It's also case sensitive, so double check.) 
+    In your "Borderlands 2\Binaries\Win32"-folder find your current "PhysXExtensions.dll".
+    Rename it to "PhysXExtensions_org.dll" (exactly like that, because we're going to forward calls meant for that dll to it. It's also case sensitive, so double check.) 
     
-    Then copy one of the included "steam_api.dll"'s into that folder, depending on what features you want.
+    Then copy one of the included "PhysXExtensions.dll"'s into that folder, depending on what features you want.
 
 - create "autoexec.txt" in the Binaries-folder where your patch-file is in and put "exec YOURPATCHFILENAME.txt" inside.
 
@@ -80,6 +80,7 @@ StartupMovies=;Loading
 ```
 
 # Changes (Most Recent at the Top)
+- Switched from using steam_api.dll to PhysXExtensions.dll (fixes launching the game via steam)
 - Should have fixed Status of the SparkService when skipping autoexec
 - Hotkey-Exec now checks whether to exec the Offline or Online-Hotfix patch (setup autoexec.txt accordingly and make sure to convert Patchfiles to online/offline via FilterTool/BLCMM)
 - Removed checking for Window-Titles, using the "HWND" stored by the game itself instead (should fix usage of multiple game instances)
