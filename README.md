@@ -1,3 +1,13 @@
+# Warning:
+The BL2 DLL-Autoexec.zip and BLTPS DLL-Autoexec.zip contain unstable versions and are considered "outdated". If you have issues with those, there's no need to contact me.
+
+If you want to help me fix (mainly) crashes atm., use the PluginTestBL2.zip or PluginTestTPS.zip, depending on which game you use.
+
+Instructions are in the included Readme.txt.
+
+!READ IT! It's there for a reason!
+
+
 # Installation:
 - Manually renaming :
     In your "Borderlands 2\Binaries\Win32"-folder find your current "PhysXExtensions.dll".
