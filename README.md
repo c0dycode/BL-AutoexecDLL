@@ -7,6 +7,9 @@ Instructions are in the included Readme.txt.
 
 !READ IT! It's there for a reason!
 
+# Requirements:
+- Borderlands PluginLoader (slightly outdated version is included in the PluginTest-version) https://github.com/c0dycode/BorderlandsPluginLoader
+
 
 # Installation:
 - Manually renaming :
@@ -121,3 +124,9 @@ Obviously use at your own risk. It may cause a random gamecrash or similiar.
 # Thanks
 - TheFeckless
 - Warranty Voider
+
+
+# Support
+If you enjoy my work and would like to support me, feel free to do so here :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CRVHLK9MURS9Q)
