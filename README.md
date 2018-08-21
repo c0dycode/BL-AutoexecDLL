@@ -8,7 +8,7 @@ Instructions are in the included Readme.txt.
 !READ IT! It's there for a reason!
 
 # Requirements:
-- Borderlands PluginLoader (slightly outdated version is included in the PluginTest-version) https://github.com/c0dycode/BorderlandsPluginLoader
+- Borderlands PluginLoader (included in the PluginTest-version) https://github.com/c0dycode/BorderlandsPluginLoader
 
 
 # Installation:
