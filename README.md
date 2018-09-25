@@ -1,26 +1,12 @@
-# Warning:
-The BL2 DLL-Autoexec.zip and BLTPS DLL-Autoexec.zip contain unstable versions and are considered "outdated". If you have issues with those, there's no need to contact me.
-
-If you want to help me fix (mainly) crashes atm., use the PluginTestBL2.zip or PluginTestTPS.zip, depending on which game you use.
-
-Instructions are in the included Readme.txt.
-
-!READ IT! It's there for a reason!
-
 # Requirements:
-- Borderlands PluginLoader (slightly outdated version is included in the PluginTest-version) https://github.com/c0dycode/BorderlandsPluginLoader
+- Borderlands PluginLoader (already included in the zip-files) https://github.com/c0dycode/BorderlandsPluginLoader
 
 
 # Installation:
-- Manually renaming :
-    In your "Borderlands 2\Binaries\Win32"-folder find your current "PhysXExtensions.dll".
-    Rename it to "PhysXExtensions_org.dll" (exactly like that, because we're going to forward calls meant for that dll to it. It's also case sensitive, so double check.) 
-    
-    Then copy one of the included "PhysXExtensions.dll"'s into that folder, depending on what features you want.
+- Download the zip-file suited for your game and put the ddraw.dll + Plugins-folder into the Win32-folder where youre games .exe-file is in. For example: C:\Steam\steamapps\common\Borderlands 2\Binaries\Win32
 
-- create "autoexec.txt" in the Binaries-folder where your patch-file is in and put "exec YOURPATCHFILENAME.txt" inside.
+- create "autoexec.txt" in the Binaries-folder where your patch-file is in.
 
-OPTIONAL:
 Make the "autoexec.txt" look like this:
 ```
 Online=exec YourOnlineHotfixPatch.txt
@@ -28,21 +14,11 @@ Offline=exec YourOfflineHotfixPatch.txt
 Fastmode=true
 ```
 
-
-Different features in different versions:
-
-- "AutoexecAndGravityMode"       : Has both Autoexec and the Random Gravity-Mode
-- "NoAutoexecNoGravityMode"      : Neither Autoexec, nor Random Gravity
-- "NoAutoexecWithGravityMode"    : No Autoexec but Random Gravity
-- "AutoexecNoGravityMode"        : Autoexec but no Random Gravity
-- "AutoexecNoGravityModeOffline" : Auoexec, no gravity and forced Offline-Hotfixes
-
-!!! All versions have the F8-Hotkey to "exec autoexec.txt" !!!
+You can leave out Online= and Offline= and just have "exec Patch.txt" in there aswell.
 
 # Current Features:
 - Autoexec (with skipping Autoexec via. CTRL)
-- Random Gravity-Mode (only BL2)
-- Notification whether the SparkService is initialized or not (Online hotfixes if yes and vice versa), if autoexec is skipped.
+- Notification whether the SparkService is initialized or not (Online hotfixes if yes and vice versa)
 - Fastmode
 
 ## Autoexec:
@@ -56,13 +32,6 @@ Currently a hardcoded hotkey is also implemented to execute "autoexec.txt". Simp
 * Notes:
 - Unlike executing the patch manually, you'll not see any kind of response if you open the console after executing the patch. (Yet?)
 - However, should there be an issue, like File wasn't found, it'll still tell you in the Console.
-
-## Random Gravity-Mode (BL2 only):
-This will randomize the gravity in random intervals (2-10 seconds).
-Tweaking the range of the random gravity is most likely still needed.
-
-To start this mode, Press CTRL+F9. You should now see a message in the In-Game-Chat.
-To disable this mode again, press CTRL+F10. You'll see a message that the mode has been disabled.
 
 ## Fastmode: Skips the Loading screen before the "Press any key"-Menu and the "Press any key"-Menu itself.
 For optimal results, skip the "2K", "Gearbox" and "NVidia"-logos manually as fast as you can, or disable them in "WillowEngine.ini".
@@ -93,6 +62,7 @@ StartupMovies=;Loading
 ```
 
 # Changes (Most Recent at the Top)
+- Removed old versions and switched to the Plugin-version by default now
 - Switched from using steam_api.dll to PhysXExtensions.dll (fixes launching the game via steam)
 - Should have fixed Status of the SparkService when skipping autoexec
 - Hotkey-Exec now checks whether to exec the Offline or Online-Hotfix patch (setup autoexec.txt accordingly and make sure to convert Patchfiles to online/offline via FilterTool/BLCMM)
@@ -105,14 +75,13 @@ StartupMovies=;Loading
 - Previous random crashes have been reduced by A LOT!
  
 # Known Issues:
+- There's a chance of the game crashing when you reach the main menu every once in a blue moon. Should be very very very rare though
 - You tell me :P
 
 ## Not tested:
-- How and if it works in multiplayer (Random Gravity)
 
 ## Expect:
 - Autoexec or (bypassing autoexec)
-- Random Gravity (if you select a BL2 version that contains this feature)
 - MAYBE a crash at some point
 
 # Disclaimer
