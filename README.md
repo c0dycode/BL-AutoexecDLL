@@ -12,6 +12,7 @@ Make the "autoexec.txt" look like this:
 Online=exec YourOnlineHotfixPatch.txt
 Offline=exec YourOfflineHotfixPatch.txt
 Fastmode=true
+ForceOfflineHotfixes=false
 ```
 
 You can leave out Online= and Offline= and just have "exec Patch.txt" in there aswell.
@@ -20,6 +21,7 @@ You can leave out Online= and Offline= and just have "exec Patch.txt" in there a
 - Autoexec (with skipping Autoexec via. CTRL)
 - Notification whether the SparkService is initialized or not (Online hotfixes if yes and vice versa)
 - Fastmode
+- Force Offline Hotfixes
 
 ## Autoexec:
 This is finally some kind of "real" autoexec. No longer simulated simulated keyboard inputs. Rather the games own function is being called with proper parameters.
