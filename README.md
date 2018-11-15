@@ -64,6 +64,8 @@ StartupMovies=;Loading
 ```
 
 # Changes (Most Recent at the Top)
+- Fixed status-message if "SHiFT" appears to be down
+- Added optional forcing of Offline Hotfixes
 - Removed old versions and switched to the Plugin-version by default now
 - Switched from using steam_api.dll to PhysXExtensions.dll (fixes launching the game via steam)
 - Should have fixed Status of the SparkService when skipping autoexec
