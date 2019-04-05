@@ -1,3 +1,8 @@
+# Borderlands UHD (4K Texture Update)
+If you updated your game for the UHD-Update, you'll have to rename/delete the old "autoexec.dll" and use the "autoexec-UHD.dll" instead.
+
+Consider this a BETA for now!
+
 # Requirements:
 - Borderlands PluginLoader (already included in the zip-files) https://github.com/c0dycode/BorderlandsPluginLoader
 
