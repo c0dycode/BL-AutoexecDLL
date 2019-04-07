@@ -1,3 +1,6 @@
+# Developement status:
+Apart from potential compatability issue fixes, this Plugin won't receive any more updates.
+
 # Borderlands UHD (4K Texture Update)
 If you updated your game for the UHD-Update, you'll have to rename/delete the old "autoexec.dll" and use the "autoexec-UHD.dll" instead.
 
