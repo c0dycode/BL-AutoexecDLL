@@ -1,14 +1,11 @@
 # Developement status:
-Apart from potential compatability issue fixes, this Plugin won't receive any more updates.
+This Plugin won't receive any more updates. AFAIK, alternatives are being worked on :) Thanks for all the support!
 
 # Borderlands UHD (4K Texture Update)
 If you updated your game for the UHD-Update, you'll have to rename/delete the old "autoexec.dll" and use the "autoexec-UHD.dll" instead.
 
-Consider this a BETA for now!
-
 # Requirements:
-- Borderlands PluginLoader (already included in the zip-files) https://github.com/c0dycode/BorderlandsPluginLoader
-
+- DLLPluginLoader (already included in the zip-files) https://github.com/c0dycode/DLLPluginLoader
 
 # Installation:
 - Download the zip-file suited for your game and put the ddraw.dll + Plugins-folder into the Win32-folder where youre games .exe-file is in. For example: C:\Steam\steamapps\common\Borderlands 2\Binaries\Win32
